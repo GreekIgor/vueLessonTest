@@ -33,7 +33,7 @@
             return {
               logout: ()=> {
                 store.commit('logout')
-                  router.push('/aut')
+                  router.push('/auth')
               }
             }
 

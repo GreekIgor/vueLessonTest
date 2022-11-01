@@ -22,7 +22,7 @@ const routes = [
       }
   },
     {
-      path: '/aut',
+      path: '/auth',
       name : 'Auth',
       component: ()=> import('../views/Auth.vue'),
         meta: {
