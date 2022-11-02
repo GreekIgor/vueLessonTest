@@ -5,10 +5,10 @@
 
         <ul class="navbar-menu">
             <li>
-                <router-link to="">Заявки</router-link>
+                <router-link to="/">Заявки</router-link>
             </li>
             <li>
-                <router-link to="">Помощь</router-link>
+                <router-link to="/help">Помощь</router-link>
             </li>
             <li>
                 <a href="#">Сообщения</a>
@@ -32,8 +32,8 @@
 
             return {
               logout: ()=> {
-                store.commit('logout')
-                  router.push('/aut')
+                   store.commit('auth/logout')
+                  router.push('/auth')
               }
             }
 
