@@ -1,4 +1,7 @@
 <template>
+  <div class="breadcrumbs" v-if="back">
+    <router-link to="/">Вернуться с списку заявок</router-link>
+  </div>
     <div class="card">
         <h1 class="card-title">
 
@@ -18,7 +21,11 @@
             title: {
                 type: String,
                 required: true
-            }
+            },
+          back: {
+              type: Boolean,
+              default: true
+          }
         },
         setup(){
 

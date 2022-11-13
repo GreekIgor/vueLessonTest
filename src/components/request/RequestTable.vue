@@ -21,7 +21,7 @@
             <td>{{r.status }}</td>
             <td>
                 <router-link v-slot="{navigate}" custom :to="{name: 'Request', params : {id: r.id}}">
-                   <button class="btn primary" @click="navigate">Открыть</button>
+                   <button class="btn" @click="navigate">Открыть</button>
                 </router-link>
             </td>
             <td>dd</td>
